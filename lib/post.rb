@@ -3,14 +3,14 @@ class Post
   
   @@all = []
   
-  def initialize(title, artist=nil) 
-    @name = name 
-    @@artist = artist 
+  def initialize(title, author=nil) 
+    @title = title
+    @@author = author
     @@all << self 
   end 
   
-  def artist_name
-   self.artist ? self.artist.name : nil
+  def author_name
+   self.author ? self.author.name : nil
   end 
   
   def self.all 
