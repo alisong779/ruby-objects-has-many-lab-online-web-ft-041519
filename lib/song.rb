@@ -7,7 +7,10 @@ class Song
     @@songs << @name 
   end 
   
-  def artist_name 
+  def artist_name
+    if artist_name = nil 
+      nil 
+    else 
     self.artist.name 
   end 
   
@@ -15,8 +18,5 @@ class Song
     @@songs 
   end 
   
-  def save 
-    self.class.all << self 
-  end 
   
 end 
